@@ -1,0 +1,188 @@
+/* HTML Elements */
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/static/img/basehero.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+}
+
+h1, h2, h3 {
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+}
+
+h4, h5, h6 {
+    font-family: "Spartan", sans-serif;
+}
+
+p, th, td, input {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+a {
+    font-family: "Montserrat Alternates", sans-serif;
+    cursor: pointer;
+}
+
+/* Custom CSS */
+
+/* ------ Links */
+
+.jgLink:hover {
+    background: none;
+    color: #F7DBA7;
+    text-decoration: none;
+}
+
+.jgListLink:hover {
+    color: #F7DBA7;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.dropdown-item:hover {
+    font-weight: bold;
+}
+
+.jgSmImage {
+    height: 350px !important;
+    width: auto;
+}
+
+#jgAboutImg {
+    background: url('/static/img/lemongin.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    min-width: 100%;
+}
+
+/* ------ Alignment  */
+
+.jgHeight {
+    margin-top: 15rem;
+    margin-right: 2rem;
+}
+
+/* ------ Text Colours */
+
+.jgTextDark {
+    color: #041F1E;
+}
+
+.jgTextLight {
+    color: #F7DBA7;
+}
+
+.jgTextCopp {
+    color: #C57B57;
+}
+
+.jgTextGrn {
+    color: #20C997;
+}
+
+.jgTextRed {
+    color: #DC3545;
+}
+
+.jgTextWh {
+    color: #FAFAFA;
+}
+
+.jgTextBlue {
+    color: #3DD5F3;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+/* ------ Background Colours */
+
+.jgDBG {
+    background-color: #041F1E
+}
+
+.jgBG {
+    background-color: #FAFAFA;
+}
+
+.jgBGGrn {
+    background-color: #20C997;
+}
+
+.jgBGBlue {
+    background-color: #3DD5F3;
+}
+
+.jgBGRed {
+    background-color: #20C997;
+}
+
+.jgBGBlk {
+    background-color: #262730;
+}
+
+.jgBGCopp {
+    background-color: #C57B57;
+}
+
+/* ------ Buttons */
+
+.jgIcon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.jgBtn {
+    background-color: #C57B57;
+    border-color: #C57B57;
+    color: #041F1E;
+    border-radius: 5px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.jgBtn:hover {
+    background-color: #F7DBA7;
+    border-color: #F7DBA7;
+    color: #C57B57;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+/* ------ Toasts */
+
+.jgToastCont {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 999999999999999
+}
+
+.jgToast {
+    overflow: visible;
+    z-index: 999999999999999
+}
+
+.jgTCap {
+    height: 2px;
+    z-index: 999999999999999
+}
+
+.jgCartNotWr {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
