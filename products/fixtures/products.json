@@ -1,0 +1,533 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "sku": "ba8867",
+        "name": "Barra Atlantic",
+        "gin_desc": "Barra Atlantic Gin showcases a perfect balance of floral and herbal on the nose, leading to juniper, citrus and dulcet carrageen. Refreshing and clean, with a long, gratifyingly warm spice finish.",
+        "alc_level": 46,
+        "alc_vol": "70cl",
+        "price": 35.00,
+        "category": 2,
+        "rating": 4.6,
+        "image": "barragin.jpg"
+    }
+}, {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "sku": "avia90",
+        "name": "Aviation Gin",
+        "gin_desc": "The gin takes a Dutch style rye spirit base combined with with juniper, lavender, anise, sarsaparilla, orange peel and cardamom, and the botanicals are steeped in grain spirit.",
+        "alc_level": 42,
+        "alc_vol": "70cl",
+        "price": 30.00,
+        "category": 10,
+        "rating": 4.0,
+        "image": "aviation.jpg"
+    }
+}, {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "sku": "bal511",
+        "name": "Ballykeefe Extra Dry Irish Gin",
+        "gin_desc": "Fresh citrus notes with a hint of spice and a lingering floral bouquet. Immediate hit of juniper and citrus, mid palate of warming spiced flavours.Very dry on the finish, making the next sip a must.",
+        "alc_level": 40,
+        "alc_vol": "70cl",
+        "price": 40.00,
+        "category": 3,
+        "rating": 4.3,
+        "image": "bally.jpg"
+    }
+}, {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "sku": "bir991",
+        "name": "Birch Gin",
+        "gin_desc": "A marvellous expression made with the one-shot distillation method and featuring birch syrup as one of its botanicals - which imparts a subtly sweet yet spicy note to the spirit. Alongside the eponymous birch syrup, this expression features the likes of juniper, orange, lime, grapefruit, rosemary, coriander, lemongrass, cardamom, cinnamon, ginger, orris.",
+        "alc_level": 42,
+        "alc_vol": "50cl",
+        "price": 34.95,
+        "category": 1,
+        "rating": 4.8,
+        "image": "birchsm.jpg"
+    }
+}, {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "sku": "bloo64",
+        "name": "Bloom Gin",
+        "gin_desc": "Bloom Gin is a superb London Dry Gin produced by Greenall's and named 'Bloom' in reference to the floral nature of its botanicals: honeysuckle, pomelo and chamomile.",
+        "alc_level": 40,
+        "alc_vol": "70cl",
+        "price": 28.80,
+        "category": 1,
+        "rating": 4.0,
+        "image": "bloomgin.jpg"
+    }
+}, {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "sku": "boti87",
+        "name": "Botanist Islay Dry Gin",
+        "gin_desc": "Barra Atlantic Gin showcases a perfect balance of floral and herbal on the nose, leading to juniper, citrus and dulcet carrageen. Refreshing and clean, with a long, gratifyingly warm spice finish.",
+        "alc_level": 46,
+        "alc_vol": "70cl",
+        "price": 36.00,
+        "category": 1,
+        "rating": 4.7,
+        "image": "botansm.jpg"
+    }
+}, {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+        "sku": "curi82",
+        "name": "Curiowild Coast Gin",
+        "gin_desc": "Delicate and smooth to taste, it's spicy on the palate with balanced botanicals. Perfect to enjoy as a classic G&T or on its own with ice.",
+        "alc_level": 41,
+        "alc_vol": "70cl",
+        "price": 33.00,
+        "category": 1,
+        "rating": 3.9,
+        "image": "curiogin.jpg"
+    }
+}, {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+        "sku": "dari41",
+        "name": "Daringly Dry London Gin",
+        "gin_desc": "The carefully created botanical recipe includes juniper berries, coriander, orange and lemon peel, almond and liquorice.",
+        "alc_level": 47,
+        "alc_vol": "70cl",
+        "price": 31.99,
+        "category": 1,
+        "rating": 4.4,
+        "image": "daringly.png"
+    }
+}, {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+        "sku": "east09",
+        "name": "East London Dry Gin",
+        "gin_desc": "East London Liquor Premium Gin Batch 2 is made with botanicals including juniper berries, coriander seeds, angelica root, thyme, winter savory, fennel seed, orris root, lavender, lemon peel, sage and bay leaf.",
+        "alc_level": 46,
+        "alc_vol": "70cl",
+        "price": 30.95,
+        "category": 1,
+        "rating": 4.6,
+        "image": "eastlon.jpg"
+    }
+}, {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "sku": "eden79",
+        "name": "Eden Mill Original Gin",
+        "gin_desc": "Barra Atlantic Gin showcases a perfect balance of floral and herbal on the nose, leading to juniper, citrus and dulcet carrageen. Refreshing and clean, with a long, gratifyingly warm spice finish",
+        "alc_level": 42,
+        "alc_vol": "70cl",
+        "price": 30.00,
+        "category": 2,
+        "rating": 4.9,
+        "image": "edenmill.jpg"
+    }
+}, {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "sku": "edin99",
+        "name": "Edinburgh Gin",
+        "gin_desc": "Beautifully balanced and crafted with warm spiciness, tangy sweetness, more juniper and more gin. Our Classic London Dry is at the base.",
+        "alc_level": 46,
+        "alc_vol": "70cl",
+        "price": 30.00,
+        "category": 2,
+        "rating": 4.9,
+        "image": "edgin.jpg"
+    }
+}, {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "sku": "bom423",
+        "name": "Bombay Sapphire",
+        "gin_desc": "Light and piney juniper, with soft peppery warmth building. Subtle sweetness of sugared almond and angelica develops, still packed with herbaceousness.",
+        "alc_level": 40,
+        "alc_vol": "70cl",
+        "price": 25.00,
+        "category": 1,
+        "rating": 4.0,
+        "image": "bombay.jpg"
+    }
+}, {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+        "sku": "flam52",
+        "name": "In Flames",
+        "gin_desc": "The lingonberries were macerated together with the cranberries over a few warm summer days before they were distilled and added to the gin.",
+        "alc_level": 40,
+        "alc_vol": "70cl",
+        "price": 55,
+        "category": 15,
+        "rating": 4.5,
+        "image": "inflames.jpg"
+    }
+}, {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+        "sku": "gord07",
+        "name": "Gordon Castle Gin",
+        "gin_desc": "Gordon Castle Gin is a crisp, elegant and refreshing gin with a lovely clean palate. Subtle notes of lavender linger in the back of the nose and within the mouth. Garden mint comes into focus helping promote the clean and refreshing character.",
+        "alc_level": 43,
+        "alc_vol": "70cl",
+        "price": 36.95,
+        "category": 2,
+        "rating": 4.7,
+        "image": "gordcast.jpg"
+    }
+}, {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+        "sku": "drum88",
+        "name": "Drumshanbo Gunpowder Gin",
+        "gin_desc": "Here at the edge of a lake in a shed in a small Irish town, the ordinary is made extraordinary. Within is the laboratory of Rigney, boundary-pushing begetter of hand- made spirits who slow distills gin with natures finest oriental botanicals and gunpowder tea.",
+        "alc_level": 43,
+        "alc_vol": "70cl",
+        "price": 30.00,
+        "category": 3,
+        "rating": 4.6,
+        "image": "gunpow.jpg"
+    }
+}, {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+        "sku": "hend78",
+        "name": "Hendricks Gin",
+        "gin_desc": "From its floral aroma of violet and rose to the subtle hint of spice, Hendrick's Gin takes the senses on a wonderful adventure. Botanicals are sourced from exotic flowers, fruits and seeds all over the world, making it crisp, zesty and entirely exquisite.",
+        "alc_level": 41.4,
+        "alc_vol": "70cl",
+        "price": 35.00,
+        "category": 2,
+        "rating": 4.6,
+        "image": "hendricks.jpg"
+    }
+}, {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+        "sku": "king11",
+        "name": "Kings Hill Gin",
+        "gin_desc": "Piney Juniper berries form the perfect backbone of our gin. Locally-foraged Heather, Rosehips, Gorse and Elderflower.",
+        "alc_level": 44,
+        "alc_vol": "70cl",
+        "price": 38.99,
+        "category": 1,
+        "rating": 4.0,
+        "image": "kingshill.jpg"
+    }
+}, {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+        "sku": "saint1",
+        "name": "Land of Saints Organic Gin",
+        "gin_desc": "Land of Saints is produced with 13 organic botanicals, which make for an exceptionally smooth, fresh, citrus led gin with floral notes and a well balanced level of juniper.",
+        "alc_level": 40,
+        "alc_vol": "70cl",
+        "price": 39.95,
+        "category": 1,
+        "rating": 4.8,
+        "image": "los.jpg"
+    }
+}, {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+        "sku": "lcgin4",
+        "name": "L&C Gin",
+        "gin_desc": "A beautiful balanced gin that has plenty of classic pine notes from juniper and then the layers of lime and cardamom really come through.",
+        "alc_level": 40,
+        "alc_vol": "70cl",
+        "price": 34.00,
+        "category": 1,
+        "rating": 4.5,
+        "image": "lcgin.jpg"
+    }
+}, {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+        "sku": "mash94",
+        "name": "Masham Classic Gold",
+        "gin_desc": "Goldings Hops and Golden Berries interwoven with Lime Peel and Orange Peel. Kaffir Lime Leaves, Lemon Grass and Pomelo peel. A little kick of black and pink peppercorn too.",
+        "alc_level": 42,
+        "alc_vol": "70cl",
+        "price": 40.00,
+        "category": 1,
+        "rating": 4.9,
+        "image": "masham.jpg"
+    }
+}, {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+        "sku": "oldv22",
+        "name": "Old Curiosity Lemon Verbena Gin",
+        "gin_desc": "Natural citrus notes, a hint of lemon sherbet, this is a refreshing dry gin with a slight salinity to the finish.",
+        "alc_level": 39,
+        "alc_vol": "50cl",
+        "price": 35.00,
+        "category": 2,
+        "rating": 4.7,
+        "image": "oldcuriogin.png"
+    }
+}, {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+        "sku": "ork966",
+        "name": "Orkney Gin Johnsmas",
+        "gin_desc": "Johnsmas is a highly floral, fragrant and light gin made with a selection of hand-picked botanicals from the island of Orkney.",
+        "alc_level": 41.3,
+        "alc_vol": "50cl",
+        "price": 34.00,
+        "category": 2,
+        "rating": 4.5,
+        "image": "orkn.jpg"
+    }
+}, {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+        "sku": "reel73",
+        "name": "Shetland Reel Gin",
+        "gin_desc": "Made with a specially devised recipe featuring 8 botanicals, including juniper, coriander seed, orris root, cassia bark, citrus peel and apple mint.",
+        "alc_level": 43,
+        "alc_vol": "70cl",
+        "price": 38.50,
+        "category": 2,
+        "rating": 4.6,
+        "image": "reel.jpg"
+    }
+}, {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+        "sku": "pick28",
+        "name": "Pickerings Gin",
+        "gin_desc": "Finely-tuned, the ingredients featuring botanicals like Juniper, Lemon, Lime, Coriander, Anise, Angelica, Cardamom, Clove and Fennel shine through.",
+        "alc_level": 42,
+        "alc_vol": "70cl",
+        "price": 28.70,
+        "category": 2,
+        "rating": 3.8,
+        "image": "pickerings.jpg"
+    }
+}, {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+        "sku": "roku36",
+        "name": "Roku Japanese Gin",
+        "gin_desc": "Infused with a selection of plants, representing the four seasons: sakura leaves, and sakura blossom for spring, sencha tea and gyokuro tea for summer, pepper sansho for autumn and yuzu peel for winter.",
+        "alc_level": 43,
+        "alc_vol": "70cl",
+        "price": 36.00,
+        "category": 9,
+        "rating": 4.7,
+        "image": "roku.jpg"
+    }
+}, {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "salc40",
+        "name": "Salcombe Gin 'Start Point'",
+        "gin_desc": "Distilled with 13 fine botanicals hand sourced from around the world, including Macedonian juniper, English coriander seed and fresh citrus.",
+        "alc_level": 44,
+        "alc_vol": "70cl",
+        "price": 40.00,
+        "category": 1,
+        "rating": 4.8,
+        "image": "salcombegin.jpg"
+    }
+}, {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+        "sku": "sibl42",
+        "name": "Siblings Lemon & Rosemary Gin",
+        "gin_desc": "Infused with fresh lemon zest and rosemary. This is the perfect gin for a spring G&T, served with a slice of lemon and lots of ice.",
+        "alc_level": 42,
+        "alc_vol": "70cl",
+        "price": 40.00,
+        "category": 1,
+        "rating": 4.9,
+        "image": "siblinggin.jpg"
+    }
+}, {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+        "sku": "sips28",
+        "name": "Sipsmith London Dry Gin",
+        "gin_desc": "Floral, summer meadow notes, followed by mellow rounded juniper and zesty, citrus freshness. Dry juniper leads, then reveals lemon tart & orange marmalade.",
+        "alc_level": 41.6,
+        "alc_vol": "70cl",
+        "price": 28.50,
+        "category": 1,
+        "rating": 5.0,
+        "image": "sipsmith.jpg"
+    }
+}, {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+        "sku": "hern31",
+        "name": "Herno Swedish Gin",
+        "gin_desc": "Smell of pine trees bursts out of the bottle. A sweet juniper and spicy coriander balance out the mix, with slightly muted vanilla.",
+        "alc_level": 46,
+        "alc_vol": "70cl",
+        "price": 31.00,
+        "category": 15,
+        "rating": 4.7,
+        "image": "herno.jpg"
+    }
+}, {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+        "sku": "kyro30",
+        "name": "Kyrö Gin",
+        "gin_desc": "The palate adds more floral and perfumed qualities, Parma Violets and a touch of rich heather, among bolder kicks of spice, which include a little cinnamon.",
+        "alc_level": 46.3,
+        "alc_vol": "50cl",
+        "price": 30.00,
+        "category": 4,
+        "rating": 5.0,
+        "image": "kyro.jpg"
+    }
+}, {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+        "sku": "glac35",
+        "name": "Glacier Icelandic Gin",
+        "gin_desc": "Glacier Gin is made from selected high quality ingredients to ensure a fresh and good taste. Mix double Glacier Gin and tonic with lots of cloves and a slice of lemon peel.",
+        "alc_level": 44,
+        "alc_vol": "70cl",
+        "price": 35.00,
+        "category": 7,
+        "rating": 4.9,
+        "image": "glacier.jpg"
+    }
+}, {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+        "sku": "alkk42",
+        "name": "Alkkemist Gin",
+        "gin_desc": "Triple-distilled grain spirit and 21 different botanicals, interestingly including Muscat grape, alongside orange and lemon peel, rose petals, samphire, fennel, thyme and mint, among others.",
+        "alc_level": 40,
+        "alc_vol": "70cl",
+        "price": 42.00,
+        "category": 8,
+        "rating": 4.4,
+        "image": "alkkemist.jpg"
+    }
+}, {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+        "sku": "unga40",
+        "name": "Ungava Gin",
+        "gin_desc": "Named after the Ungava Peninsula which is in Quebec, Canada. Sweet Berries run throughout this alongside a finish of Peppermint and a hint of Caramel.",
+        "alc_level": 43.1,
+        "alc_vol": "70cl",
+        "price": 40.00,
+        "category": 11,
+        "rating": 4.5,
+        "image": "ungava.jpg"
+    }
+}, {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+        "sku": "glen41",
+        "name": "Glengowrie Thunderbolt Gin",
+        "gin_desc": "Handcrafted with robust botanicals, and showcases the endangered New England peppermint gum. Flavours are citrus and gentle warm pepper.",
+        "alc_level": 57,
+        "alc_vol": "50cl",
+        "price": 41.00,
+        "category": 5,
+        "rating": 4.2,
+        "image": "thunder.png"
+    }
+}, {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+        "sku": "thom70",
+        "name": "Thomson Victor Gin",
+        "gin_desc": "Heavy botanical style gin hand-crafted in New Zealand. Juniper, lemon, lemongrass, cardamom and coriander.",
+        "alc_level": 42,
+        "alc_vol": "70cl",
+        "price": 57.00,
+        "category": 6,
+        "rating": 4.8,
+        "image": "victorgin.jpg"
+    }
+}, {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+        "sku": "malf41",
+        "name": "Malfy Gin Rosa",
+        "gin_desc": "This ace Italian gin is built around the awesomeness of Sicilian pink grapefruit, and features a hint of rhubarb too.",
+        "alc_level": 41,
+        "alc_vol": "70cl",
+        "price": 30.00,
+        "category": 12,
+        "rating": 4.8,
+        "image": "malfy.jpg"
+    }
+}, {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+        "sku": "cana47",
+        "name": "Canaima",
+        "gin_desc": "Straight from the Amazon rainforest. 10 indigenous botanicals makes for a grassy,refreshing and herbaceous spirit. There’s a peppery kick and a general earthiness, as well as a lingering, fruity sweetness.",
+        "alc_level": 47,
+        "alc_vol": "70cl",
+        "price": 30.00,
+        "category": 13,
+        "rating": 4.6,
+        "image": "canaima.jpg"
+    }
+}, {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+        "sku": "brok47",
+        "name": "Broken Bones Gin",
+        "gin_desc": "This London dry gin is distilled with juniper and other botanicals from Slovenia’s Karst region to create an appealing medley of floral, citrus and spice notes.",
+        "alc_level": 47,
+        "alc_vol": "50cl",
+        "price": 40.00,
+        "category": 14,
+        "rating": 5.0,
+        "image": "broken.jpg"
+    }
+}]

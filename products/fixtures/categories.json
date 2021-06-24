@@ -1,0 +1,121 @@
+[{
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "english",
+            "normal_name": "English"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "scottish",
+            "normal_name": "Scottish"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "irish",
+            "normal_name": "Irish"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "finnish",
+            "normal_name": "Finnish"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "australian",
+            "normal_name": "Australian"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "new zealand",
+            "normal_name": "New Zealand"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "icelandic",
+            "normal_name": "Icelandic"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "spanish",
+            "normal_name": "Spanish"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "japanese",
+            "normal_name": "Japanese"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "american",
+            "normal_name": "American"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.category",
+        "fields": {
+            "name": "canadian",
+            "normal_name": "Canadian"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.category",
+        "fields": {
+            "name": "italian",
+            "normal_name": "Italian"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.category",
+        "fields": {
+            "name": "venezuelan",
+            "normal_name": "Venezuelan"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.category",
+        "fields": {
+            "name": "slovenian",
+            "normal_name": "Slovenian"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.category",
+        "fields": {
+            "name": "swedish",
+            "normal_name": "Swedish"
+        }
+    }
+]
