@@ -57,7 +57,7 @@ a {
 }
 
 #jgAboutImg {
-    background: url('/static/img/lemongin.jpg') no-repeat center center fixed;
+    background: url('/static/img/abouthero.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     min-width: 100%;
