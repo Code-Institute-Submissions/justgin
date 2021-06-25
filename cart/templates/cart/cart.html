@@ -122,7 +122,7 @@
         form.submit();
     })
 
-    // Remove item and reload on click
+    // Deletes a cart item and reloads.
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
