@@ -46,7 +46,7 @@
                     {% endif %}
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
-                            <a href="#">Edit</a>
+                            <a href="#" class="jgTextBlue">Edit</a>
                             <a href="#" class="jgTextRed">Delete</a>
                         </small>
                     {% endif %}
@@ -54,7 +54,7 @@
                     
                     <p class="mt-3 jgTextCopp">Volume: <span class="text-muted">{{ product.alc_vol }}</span></p>
                     <p class="mt-3 jgTextDark">{{ product.gin_desc }}</p>
-                    <form class="form" action="#" method="POST">
+                    <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="col-12">
