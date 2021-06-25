@@ -7,7 +7,7 @@ from .models import OrderLineItem
 @receiver(post_save, sender=OrderLineItem)
 def update_on_save(sender, instance, created, **kwargs):
     """
-    Update total on lineitem update/creation.
+    Updates total on lineitem update/creation.
     """
     instance.order.update_total()
 

@@ -10,6 +10,8 @@ body {
     height: calc(100vh - 164px);
 }
 
+/* ------ Font Styles */
+
 h1, h2, h3 {
     font-family: "Spartan", sans-serif;
     font-weight: 200;
@@ -22,6 +24,9 @@ h4, h5, h6 {
 p, th, td, input {
     font-family: "Montserrat Alternates", sans-serif;
 }
+
+
+/* ------ Links */
 
 a {
     font-family: "Montserrat Alternates", sans-serif;
@@ -164,6 +169,10 @@ a {
     -moz-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
+}
+
+input[name='q']::placeholder {
+    color: #041F1E;
 }
 
 /* ------ Toasts */
