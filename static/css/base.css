@@ -65,6 +65,10 @@ a {
 
 /* ------ Alignment  */
 
+.jgMidHeight {
+    margin-top: 8rem;
+}
+
 .jgHeight {
     margin-top: 15rem;
     margin-right: 2rem;
