@@ -13,8 +13,9 @@ from accounts.models import UserAccount
 class Order(models.Model):
     order_number = models.CharField(
         max_length=32, null=False, editable=False)
-    user_account = models.ForeignKey(UserAccount, on_delete=models.SET_NULL,
-                                     null=True, blank=True, related_name='orders')
+    user_account = models.ForeignKey(
+        UserAccount, on_delete=models.SET_NULL,
+        null=True, blank=True, related_name='orders')
     full_name = models.CharField(
         max_length=50, null=False, blank=False)
     email = models.EmailField(
@@ -57,9 +58,11 @@ class Order(models.Model):
         Updates grand total when a line item is added,
         taking into consideration, delivery.
         """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        self.order_total = self.lineitems.aggregate(
+            Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
-            self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
+            sdp = settings.STANDARD_DELIVERY_PERCENTAGE
+            self.delivery_cost = self.order_total * sdp / 100
         else:
             self.delivery_cost = 0
         self.grand_total = self.order_total + self.delivery_cost
@@ -86,7 +89,8 @@ class OrderLineItem(models.Model):
     quantity = models.IntegerField(
         null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(
-        max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+        max_digits=6, decimal_places=2, null=False,
+        blank=False, editable=False)
 
     def save(self, *args, **kwargs):
         """

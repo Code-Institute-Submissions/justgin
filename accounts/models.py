@@ -8,9 +8,10 @@ from django_countries.fields import CountryField
 
 class UserAccount(models.Model):
     """
-    Controls Order History and Default Delivery Details.
+   Controls Order History and Default Delivery Details.
     """
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(
+        User, on_delete=models.CASCADE)
     default_phone_number = models.CharField(
         max_length=20, null=True, blank=True)
     default_street_address1 = models.CharField(
@@ -26,17 +27,16 @@ class UserAccount(models.Model):
     default_postcode = models.CharField(
         max_length=20, null=True, blank=True)
 
-
     def __str__(self):
         return self.user.username
 
 
 @receiver(post_save, sender=User)
-def create_or_update_user_Account(sender, instance, created, **kwargs):
+def create_or_update_user_account(sender, instance, created, **kwargs):
     """
     Creation/updating of Account.
     """
     if created:
         UserAccount.objects.create(user=instance)
-    # Existing users: just save the account
+    # Existing users, save the account.
     instance.useraccount.save()

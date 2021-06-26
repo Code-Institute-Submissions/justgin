@@ -6,9 +6,10 @@ from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
+
 from products.models import Product
-from accounts.forms import UserAccountForm
 from accounts.models import UserAccount
+from accounts.forms import UserAccountForm
 from cart.contexts import cart_contents
 
 import stripe
@@ -27,8 +28,8 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        messages.error(
-            request, "I'm afraid the payment can't be processed. Try again soon.")
+        messages.error(request, (
+            "I'm afraid the payment can't be processed. Try again soon."))
         return HttpResponse(content=e, status=400)
 
 
@@ -50,6 +51,7 @@ def checkout(request):
             'street_address2': request.POST['street_address2'],
             'county': request.POST['county'],
         }
+
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save(commit=False)
@@ -80,8 +82,8 @@ def checkout(request):
             return redirect(
                 reverse('checkout_success', args=[order.order_number]))
         else:
-            messages.error(request, 'Uh-oh, there was a form error. \
-                Check your details, and resubmit.')
+            messages.error(request, (
+                'Uh-oh, there was a form error. Check your details, and          resubmit.'))
     else:
         cart = request.session.get('cart', {})
         if not cart:
@@ -118,8 +120,8 @@ def checkout(request):
             order_form = OrderForm()
 
     if not stripe_public_key:
-        messages.warning(request, "Stripe public key isn't here, \
-            did you forget it?")
+        messages.warning(request, (
+            "Stripe public key isn't here, did you forget it?"))
 
     template = 'checkout/checkout.html'
     context = {
@@ -138,23 +140,26 @@ def checkout_success(request, order_number):
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
-    account = UserAccount.objects.get(user=request.user)
-    order.user_account = account
-    order.save()
+    if request.user.is_authenticated:
+        account = UserAccount.objects.get(user=request.user)
+        # Attach User to Account
+        order.user_account = account
+        order.save()
 
-    if save_info:
-        account_data = {
-            'default_phone_number': order.phone_number,
-            'default_country': order.country,
-            'default_postcode': order.postcode,
-            'default_town_or_city': order.town_or_city,
-            'default_street_address1': order.street_address1,
-            'default_street_address2': order.street_address2,
-            'default_county': order.county,
-        }
-        user_account_form = UserAccountForm(account_data, instance=account)
-        if user_account_form.is_valid():
-            user_account_form.save()
+        # Save User Details
+        if save_info:
+            account_data = {
+                'default_phone_number': order.phone_number,
+                'default_country': order.country,
+                'default_postcode': order.postcode,
+                'default_town_or_city': order.town_or_city,
+                'default_street_address1': order.street_address1,
+                'default_street_address2': order.street_address2,
+                'default_county': order.county,
+            }
+            user_account_form = UserAccountForm(account_data, instance=account)
+            if user_account_form.is_valid():
+                user_account_form.save()
 
     messages.success(request, f'Processed your purchase. Let the Gin flow. \
         The order number is: {order_number}. A confirmation \

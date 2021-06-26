@@ -40,7 +40,8 @@ def all_products(request):
             query = request.GET['q']
             if not query:
                 messages.error(
-                    request, "You'll need to enter something to search first.")
+                    request, (
+                        "You'll need to enter something to search first."))
                 return redirect(reverse('products'))
 
             queries = Q(

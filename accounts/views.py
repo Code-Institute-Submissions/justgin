@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 
 from .models import UserAccount
 from .forms import UserAccountForm
@@ -8,7 +7,6 @@ from .forms import UserAccountForm
 from checkout.models import Order
 
 
-@login_required
 def account(request):
     """ Display users account. """
     account = get_object_or_404(UserAccount, user=request.user)
@@ -26,7 +24,7 @@ def account(request):
     context = {
         'form': form,
         'orders': orders,
-        'on_account_page': True,
+        'on_account_page': True
     }
 
     return render(request, template, context)
@@ -36,7 +34,7 @@ def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (
-        f'These are the details of your past Gin purchases, order number: {order_number}. We sent an email to let you know, at the time.'
+        f'These are the details of a past Gin purchase, order number: {order_number}. We sent an email to let you know, at the time.'
     ))
 
     template = 'checkout/checkout_succ.html'

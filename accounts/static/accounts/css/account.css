@@ -3,6 +3,10 @@
     overflow-y: auto;
 }
 
+#account-update-form .form-control {
+    color: #041F1E;
+}
+
 #account-update-form input::placeholder {
     color: #8e9494
 }
