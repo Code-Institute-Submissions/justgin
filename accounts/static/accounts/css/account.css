@@ -1,0 +1,17 @@
+.order-history {
+    max-height: 416px;
+    overflow-y: auto;
+}
+
+#account-update-form input::placeholder {
+    color: #8e9494
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #041F1E;
+}
+
+#id_default_country option:first-child {
+    color: #8e9494
+}

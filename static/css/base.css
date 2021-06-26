@@ -22,14 +22,14 @@ h4, h5, h6 {
 }
 
 p, th, td, input {
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 
 /* ------ Links */
 
 a {
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Quicksand", sans-serif;
     cursor: pointer;
 }
 
@@ -62,10 +62,29 @@ a {
 }
 
 #jgAboutImg {
+    position: absolute;
+    top: 0;
+    left: 0;
     background: url('/static/img/abouthero.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    min-height: 100vh;
     min-width: 100%;
+    z-index: -99999;
+    padding: 0;
+    margin: 0;
+}
+
+#jgContactImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('/static/img/contacthero.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100%;
+    z-index: -99999;
+    padding: 0;
+    margin: 0;
 }
 
 /* ------ Alignment  */
@@ -115,8 +134,12 @@ a {
 
 /* ------ Background Colours */
 
-.jgDBG {
-    background-color: #041F1E
+.jgBGDark {
+    background-color: #041F1E;
+}
+
+.jgBGLight {
+    background-color: #F7DBA7;
 }
 
 .jgBG {
@@ -158,7 +181,7 @@ a {
     border-color: #C57B57;
     color: #041F1E;
     border-radius: 5px;
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 .jgBtn:hover {

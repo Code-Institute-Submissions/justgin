@@ -7,6 +7,8 @@ from django.conf import settings
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
+from accounts.forms import UserAccountForm
+from accounts.models import UserAccount
 from cart.contexts import cart_contents
 
 import stripe
@@ -25,7 +27,8 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        messages.error(request, "I'm afraid the payment can't be processed. Try again soon.")
+        messages.error(
+            request, "I'm afraid the payment can't be processed. Try again soon.")
         return HttpResponse(content=e, status=400)
 
 
@@ -64,6 +67,7 @@ def checkout(request):
                             quantity=item_data,
                         )
                         order_line_item.save()
+
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "An item in your cart, wasn't found on our side."
@@ -73,7 +77,8 @@ def checkout(request):
                     return redirect(reverse('view_cart'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(
+                reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'Uh-oh, there was a form error. \
                 Check your details, and resubmit.')
@@ -92,7 +97,25 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        order_form = OrderForm()
+        # Auto-fill's form with stored user details attempt.
+        if request.user.is_authenticated:
+            try:
+                account = UserAccount.objects.get(user=request.user)
+                order_form = OrderForm(initial={
+                    'full_name': account.user.get_full_name(),
+                    'email': account.user.email,
+                    'phone_number': account.default_phone_number,
+                    'country': account.default_country,
+                    'postcode': account.default_postcode,
+                    'town_or_city': account.default_town_or_city,
+                    'street_address1': account.default_street_address1,
+                    'street_address2': account.default_street_address2,
+                    'county': account.default_county,
+                })
+            except UserAccount.DoesNotExist:
+                order_form = OrderForm()
+        else:
+            order_form = OrderForm()
 
     if not stripe_public_key:
         messages.warning(request, "Stripe public key isn't here, \
@@ -114,6 +137,25 @@ def checkout_success(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
+
+    account = UserAccount.objects.get(user=request.user)
+    order.user_account = account
+    order.save()
+
+    if save_info:
+        account_data = {
+            'default_phone_number': order.phone_number,
+            'default_country': order.country,
+            'default_postcode': order.postcode,
+            'default_town_or_city': order.town_or_city,
+            'default_street_address1': order.street_address1,
+            'default_street_address2': order.street_address2,
+            'default_county': order.county,
+        }
+        user_account_form = UserAccountForm(account_data, instance=account)
+        if user_account_form.is_valid():
+            user_account_form.save()
+
     messages.success(request, f'Processed your purchase. Let the Gin flow. \
         The order number is: {order_number}. A confirmation \
         email will be sent to {order.email}.')

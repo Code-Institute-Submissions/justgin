@@ -10,36 +10,58 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid mt-5">
-    <div class="row">
-        <div class="col-12 m-0 p-0">
-            <div class="container" id="jgAboutImg">
-                <div class="row mt-5">
-                    <div class="col-12 mt-5">
-                        <h1 class="jgTextLight font-weight-bold mt-5 ">We like gin - <em>A LOT</em></h1>
-                        <h6 class="jgTextLight font-weight-bold mt-1">(But in a really healthy and safe way, of course.)</h6>
+<div id="jgAboutImg">
+    <div class="container-fluid mt-5 jgMidHeight">
+        <div class="row">
+            <div class="col-12 m-0 p-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mt-5">
+                            <h1 class="jgTextLight font-weight-bold mt-5 ">We like gin - <em>A LOT</em></h1>
+                            <h6 class="jgTextLight font-weight-bold mt-1">(But in a really healthy and safe way, of course.)</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row jgBG p-3">
-        <div class="col-12">
-            <h4 class="jgTextDark mt-5 mb-3 text-center"><u>About Us</u></h4>
-        </div>
-        <div class="col-12 text-center">
-            <div class="jgTextDark">
-                <p>We do all the drinking, so you don't have to!</p>
-                <p>Wait, no. That's not right.</p>
-                <p>We do all the drinking and give some insight into one of life's gems, so you can make safe and responsible decisions on your choice of poison.</p>
-                <p>Ah, did it again. Umm, your choice of decadent elixir.</p>
-                <p><u>That'll do.</u></p>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-md-11 col-sm-11 m-1 text-left jgBGDark opacity rounded">
+                <h4 class="jgTextLight my-3"><u>About Us</u></h4>
+                <div class="jgTextCopp font-weight-bold">
+                    <p>We do all the drinking, so you don't have to!</p>
+                    <p>Wait, no. That's not right.</p>
+                    <p>We do all the drinking and give some insight into one of life's gems, so you can make safe and responsible decisions on your choice of poison.</p>
+                    <p>Ah, did it again. Umm, your choice of decadent elixir.</p>
+                    <p class="jgTextLight"><em>That'll do.</em></p>
+                </div>
+                <p class="jgTextCopp font-weight-bold">But on a serious flavour note, we really do want to see you having bagged yourself a bargain. We sloe-ly savour gins from all over the world, and give our honest opinions on only the top tier of contestants. We add a new selection of Gins every month, and as such there are deals to be had. So keep an eye out, and shop with justGin today!
+                </p>
             </div>
-            <p class="jgTextDark">But on a serious flavour note, we really do want to see you <strong>walk</strong> away having bagged yourself a bargain. We sloe-ly savour gins from all over the world, and give our honest opinions on only the top tier of contestants. We add a new selection of Gins every month, and as such there are deals to be had. So keep an eye out, and shop with justGin today!
-            </p>
+            <div class="col-lg-6 col-md-11 col-sm-11 m-1 jgBGDark opacity rounded">
+                <h4 class="jgTextLight my-3"><u>Where You'll Find Us (Drinking)</u></h4>
+                <div class="jgTextCopp font-weight-bold">
+                    <ul class="list-unstyled">
+                        <li><p>110 George Street</p></li>
+                        <li><p>Edinburgh</p></li>
+                        <li><p>Scotland</p></li>
+                        <li><p>EH2 4LH</p></li>
+                    </ul>
+                </div>
+                <h4 class="jgTextLight mt-5 mb-3"><u>The Phone We Sometimes Answer</u></h4>
+                <div class="jgTextCopp font-weight-bold">
+                    <p>0345 446 446</p>
+                    <small>(It's Freephone - Leaves More to Spend on Gin)</small>
+                </div>
+                 <h4 class="jgTextLight mt-5 mb-3"><u>Our Email</u></h4>
+                <div class="jgTextCopp font-weight-bold">
+                    <p>incoherent_info@justgin.com</p>
+                </div>
+            </div>
         </div>
-        <div class="col-12 text-center">
-            <a href="{% url 'products' %}" class="btn btn-warning jgBtn">Show Me Gin</a>
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <a href="{% url 'products' %}" class="btn btn-warning jgBtn">Show Me Gin</a>
+            </div>
         </div>
     </div>
 </div>
