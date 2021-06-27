@@ -29,7 +29,7 @@ def all_products(request):
                 sortkey = 'category__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
-                if direction == 'desc':
+                if direction == 'gin_desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
@@ -46,7 +46,7 @@ def all_products(request):
                 return redirect(reverse('products'))
 
             queries = Q(
-                name__icontains=query) | Q(description__icontains=query)
+                name__icontains=query) | Q(gin_desc__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
