@@ -14,3 +14,8 @@ def about(request):
 def info(request):
     """ Info Page View """
     return render(request, 'home/info.html')
+
+
+def blog(request):
+    """ Blog Page View """
+    return render(request, 'home/blog.html')
