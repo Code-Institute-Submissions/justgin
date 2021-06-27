@@ -38,3 +38,42 @@ It has been deployed to [Github Pages]() and [Heroku]().
     * [Deployment to Heroku](#heroku-deployment)
 * [Media](#media)
 * [Acknowledgements](#acknowledgements)
+
+---
+
+## UX
+### Concept
+
+It's been a really horrid year for everyone this year. Unless of course, you've enjoyed not having to make small talk at work during your half-hour break or commuting every day in the pouring rain - justGin is based in Scotland, so it  <em>always</em> rains. <strong>Always</strong>. 
+<br>
+
+But now that society is regaining a slice of freedom by the week, and restrictions aren't as strict. It's time to celebrate - safely and responsibly. And why not with a bottle (or two) of premium artisanal gin? Well justGin, provides their users with a platform to do just that at affordable prices and some advice on pairings and flavour notes.
+
+### User Stories
+
+#### As a Customer
+
+| **As a customer and/or mixologist I would like to** | **So I Can**                            |
+| -------------------------------------------------- | --------------------------------------------- |
+| Browse products.                                   | Search for new and already tried gins.        |
+| Filter products by origin, price, name             | Compare the choices between justGin and other resellers.                                                                                           |
+| See details about a product.                       | Make a responsible purchasing decision.       |
+| Buy a product from the shop.                       | Enjoy and share it with others.               |
+| View my shopping cart before purchasing.           | See a cost breakdown before the purchase.     |
+| Update my shopping cart.                           | Make any final decisions before ordering.     |
+| Pay via a credit/debit card.                       | Complete a purchase.                          |
+| Receive an email confirmation about my order       | To be provided with proof of purchase for any potential issues.|
+| Create an account.                                 | To speed up future orders and view past orders.|
+| Amend my account details.                          | Be informed about orders and offers by justGin.|
+| View my order history                              | be reminded of previous purchases.            |
+| See what is new to the store.                      | Try the newest gins to share with others.     |
+
+<br>
+
+#### User Stories for Shop Administrators
+
+| **As an Administrator I would like to**     | **So I Can**                                     |
+| ------------------------------------------- | ------------------------------------------------ |
+| Add/Update/Remove new/existing products in the store. | Ensuring stock is relevant.            |
+| Retrieve customer purchases.                | Complete the order and send the item out to the customer.|
+| Mark a product as clearance/sale or new.    | Ensure customers have the best deals to premium quality alchohol, supporting local businesses.             |
