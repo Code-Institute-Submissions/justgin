@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid jgMidHeight">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="jgTextLight font-weight-bold mb-4">Bookkeeping</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-12 offset-1 jgBG rounded opacity">
+                        <h5 class="jgTextDark pt-3 text-center">Edit a Product</h5>
+                        <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {% for field in form %}
+                            {% if field.name != 'image' %}
+                            {{ field | as_crispy_field }}
+                            {% else %}
+                            {{ field }}
+                            {% endif %}
+                            {% endfor %}
+                            <div class="text-right">
+                                <a class="btn btn-warning jgBtn jgBGRed" href="{% url 'products' %}">Exit <i class="fas fa-times-circle"></i></a>
+                                <button class="btn btn-warning jgBtn jgBGGrn" type="submit">Amend Details <i class="fas fa-check-circle"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    $('#new-image').change(function () {
+        var file = $('#new-image')[0].files[0];
+        $('#filename').text(`Image will be set to: ${file.name}`);
+    });
+</script>
+{% endblock %}

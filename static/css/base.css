@@ -43,6 +43,10 @@ a {
     text-decoration: none;
 }
 
+.jgListLink {
+    color: #C57B57;
+}
+
 .jgListLink:hover {
     color: #F7DBA7;
     text-decoration: none;

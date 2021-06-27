@@ -58,10 +58,11 @@
                         </p>
                     </div>
                 </div>
+            <!-- Product Cards -->
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
+                            <div class="card h-100 border-0" data-aos="fade-left">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid jgSmImage" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -92,8 +93,8 @@
                                             {% endif %}
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
-                                                    <a href="#" class="jgTextBlue">Edit</a>
-                                                    <a href="#" class="jgTextRed">Delete</a>
+                                                    <a href="{% url 'edit_product' product.id %}" class="jgTextBlue">Edit</a>
+                                                    <a href="{% url 'delete_product' product.id %}" class="jgTextRed">Delete</a>
                                                 </small>
                                             {% endif %}
                                         </div>
@@ -147,5 +148,6 @@
                 window.location.replace(currentUrl);
             }
         })
+        AOS.init();
     </script>
 {% endblock %}
