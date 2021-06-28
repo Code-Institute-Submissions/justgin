@@ -121,3 +121,76 @@ Text content throughout the site was kept to a minimum of two font-families. All
 
 The imagery used, had to be of good quality to convey a message that any orders from justGin, were providing only premium brand products. It was also therefore important, that distracting CSS was kept to a minimum and imagery, was simple, relying partly too on the description provided. A simple layout, with minimal pastel colours brought the design, an element of elegance and sophistication.
 
+## Features
+
+### Existing Features
+
+#### Home Page
+
+On the opening Homepage of justGin, displayed is a responsive Navigation bar, containing a search box designed to work with the Products offered by justGin, an account link - for users to view previous orders, and alternatively for Admin to manage product inventory - as well as a shopping cart, which stores a user's potential order.
+
+The main contents of the Homepage, is kept to a minimum. As mentioned previously, this is due to not wanting to overcrowd the site with unnecessary CSS distractions.
+
+The lower Navigation bar, which toggles into a dropdown menu on mobile devices, contains the site's navigation, more specifically for: All Products, About, Info & Blog (which is being considered as a future implementation).
+
+#### Product Catalogue
+
+When navigating to the justGin store, there are various different options to aid the user in finding a product they are looking for. These are:
+
+* A form utilising a search box which is used by entering a keyword. This is accessible on all screen sizes.
+* A category tag within the product card, which lists a Gin by its origin. This is marked with the icon: <img src="static/img/tag.png">
+* A "Sort By" box located in a row, above the product catalogue.
+
+#### Product Details
+
+A user visiting the site can click on the card of a specific Gin, which will redirect to a screen providing the following information:
+
+* Product Name
+* Image
+* Price
+* Rating
+* Description
+* Alcohol Level (ABV)
+* Alcohol Volume (cl)
+
+Beneath this list of details, is a amount quantity with corresponding incremental and decremental buttons, as well as two links. One which allows the user to navigate back to the Product Catalogue, and another which provides the user with the option to checkout.
+
+#### User Account
+
+Creating an account with justGin is straightforward and can be done so using the 'My Account' button in the navigation bar, as well as in the Checkout page, which is displayed once a user has confirmed their order, and proceeds to the purchase stage. The accounts element allows users the following functions:
+
+* Update their default delivery details.
+* View previous orders.
+
+#### Shopping Cart
+
+This area of the site, is dedicated to storing the session users order until the purchase/checkout stage.
+
+* Gin selections for purchase, are entered into the cart.
+* The cart will show a sub-total and a grand-total. This will factor in a delivery cost if the customer has/hasn't spent enought to warrant free delivery.
+* As with the Product Details page, item quantities can be adjusted via incremental/decremental buttons.
+* Selections can be removed from the cart, by using the 'remove' link, or by decreasing the quantity amount to 0.
+
+Following this, there is a button to further the process to checkout.
+
+#### Payment
+
+If a return user is shopping through justGin, and has signed into their account, and they have continued to the checkout page, the page will display their default delivery information via a form, as well as the order details/summary includign the grand-total.
+
+If, however, a user has not yet made an account, and hasn't signed in, then the delivery/customer form will display as empty and as such will need to be completed before a purchase is created.
+
+All payments are made through card using [Stripe](https://stripe.com/). To test this feature, please see the [TEST.md](https://github.com/LHBank/justgin/blob/master/TEST.md) document to see a successful purchase.
+
+#### Admin Features
+
+Whilst signed in as an Admin/Superuser, functionality not available to non-superuser users, is available. This includes being able to:
+
+* Edit/Delete an existing product. This can be accessed via the 'Edit' & 'Delete' links against each product.
+* Adding a new product, via the 'Product Management' link, accessible from the user icon in the Navbar.
+
+### Future Implementations
+
+Currently, there has been a page allocated to a 'Blog' page in the site. Although, this has purposely been left with a 'Coming Soon' title, ideally, it would be beneficial to allow an Admin user update this page with in-depth video reviews, recommended Gin distillery visits, and offers only available to those who sign up with justGin.
+
+In addition to this it would be in the best interests of justGin to implement a newsletter which users could sign up to and be notified of any updates, from the above features.
+
