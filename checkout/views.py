@@ -82,8 +82,9 @@ def checkout(request):
             return redirect(
                 reverse('checkout_success', args=[order.order_number]))
         else:
-            messages.error(request, (
-                'Uh-oh, there was a form error. Check your details, and          resubmit.'))
+            messages.error(
+                request, (
+                    'There was a form error. Check your details & resubmit.'))
     else:
         cart = request.session.get('cart', {})
         if not cart:

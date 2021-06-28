@@ -194,3 +194,34 @@ Currently, there has been a page allocated to a 'Blog' page in the site. Althoug
 
 In addition to this it would be in the best interests of justGin to implement a newsletter which users could sign up to and be notified of any updates, from the above features.
 
+## Technologies
+### Languages and Frameworks
+* HTML
+* CSS
+* JavaScript/jQuery
+* Python
+* Django
+
+### Libraries and Programs
+* [Github](https://github.com)
+* [Gitpod](https://gitpod.io/)
+* [Visual Studio Code](https://code.visualstudio.com/) - Previously used to test various possibilities for site, before primarily using Gitpod as IDE.
+* [Heroku](https://tinyurl.com/4dfm8ypp)
+* [Django](https://www.djangoproject.com/)
+* [Bootstrap 4](https://getbootstrap.com/) - Main CSS Framework
+* [Materialize](https://materializecss.com/) - Various icons used.
+* [AWS](https://tinyurl.com/trz8dssh) - Image storage provided by Amazon Web Services
+* [Stripe](https://stripe.com/gb) - Payment solution for online businesses.
+* [Font Awesome](https://fontawesome.com/)
+* [Animate.css](https://animate.style/)
+* [Animate On Scroll](https://michalsnik.github.io/aos/)
+* [Google Fonts](https://fonts.google.com/)
+* [Coolors](https://coolors.co/) - Colour Palette Generator
+* [Balsamiq](https://balsamiq.com) - Wireframes
+* [LucidChart](https://lucid.co/) - File structure diagram creation.
+* [w3Schools.com](https://www.w3schools.com) - Reference purposes.
+
+## Testing
+
+The following document, [TEST.md](https://github.com/LHBank/justgin/blob/master/TEST.md) has been created to record the manual testing carried out throughout the project.
+
