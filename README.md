@@ -56,7 +56,8 @@ But now that society is regaining a slice of freedom by the week, and restrictio
 | **As a customer and/or mixologist I would like to** | **So I Can**                            |
 | -------------------------------------------------- | --------------------------------------------- |
 | Browse products.                                   | Search for new and already tried gins.        |
-| Filter products by origin, price, name             | Compare the choices between justGin and other resellers.                                                                                           |
+| Filter products by origin, price, name             | Compare the choices between justGin and other resellers.                                                                                                 |
+| Search for Gin using the search bar                | Filter Gin by a descriptive keyword.|
 | See details about a product.                       | Make a responsible purchasing decision.       |
 | Buy a product from the shop.                       | Enjoy and share it with others.               |
 | View my shopping cart before purchasing.           | See a cost breakdown before the purchase.     |
