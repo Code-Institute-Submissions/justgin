@@ -94,7 +94,7 @@ A custom CSS file, placed within the static folder of justGin, was used in conju
 
 ### Colour Scheme
 
-As with all online platforms, a consistent colour palette is fundamental to a satisfying user experience. There are different outcomes when using the right colour scheme and with trying to keep a sense of elegance and style within the site, is why this particular colour palette was chosen. Three of the five colours presented were predominantly used.
+As with all online platforms, a consistent colour palette is fundamental to a satisfying user experience. There are different outcomes when using the right colour scheme and with trying to keep a sense of elegance and style within the site, is why this particular colour palette was chosen from [Coolors](https://coolors.co/). Three of the five colours presented were predominantly used.
 
 * 'Copper Crayola' was used throughout for headings, buttons and the ratings feature - which is how a product on the site is graded, by the admin user.
 
@@ -111,3 +111,13 @@ The 'update', 'edit' or 'delete' links utilised standard conventions of green, r
 <div>
     <img src="static/img/palette2.png" width="550px" height="auto" alt="Colour Palette">
 </div>
+
+
+### Typography
+
+Text content throughout the site was kept to a minimum of two font-families. All headings utilised the Spartan font-familiy from GoogleFonts, and likewise, all links/inputs/paragraph elements used Quicksand, also from GoogleFonts. There were subtle contrasts between the two fonts, yet weren't garish or difficult to read.
+
+### Imagery
+
+The imagery used, had to be of good quality to convey a message that any orders from justGin, were providing only premium brand products. It was also therefore important, that distracting CSS was kept to a minimum and imagery, was simple, relying partly too on the description provided. A simple layout, with minimal pastel colours brought the design, an element of elegance and sophistication.
+
