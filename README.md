@@ -84,3 +84,7 @@ But now that society is regaining a slice of freedom by the week, and restrictio
 The wireframes created with [Balsamiq]('https://balsamiq.com') at the beginning of the project and used as a reference throughout are situated in a dedicated folder entitled 
 ['wireframes'](https://github.com/LHBank/justgin/tree/master/wireframes), at project level. It contains screenshot images, for both the Mobile, Tablet, and Desktop viewport screen sizes, due to the use of Bootstrap 4, and the prioritisation on Mobile-first devices.
 
+### Database Structure
+
+<img src="static/img/db_structure.png">
+
