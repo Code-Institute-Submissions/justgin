@@ -78,3 +78,9 @@ But now that society is regaining a slice of freedom by the week, and restrictio
 | Add/Update/Remove new/existing products in the store. | Ensuring stock is relevant.            |
 | Retrieve customer purchases.                | Complete the order and send the item out to the customer.|
 | Mark a product as clearance/sale or new.    | Ensure customers have the best deals to premium quality alchohol, supporting local businesses.             |
+
+### Wireframes
+
+The wireframes created with [Balsamiq]('https://balsamiq.com') at the beginning of the project and used as a reference throughout are situated in a dedicated folder entitled 
+['wireframes'](https://github.com/LHBank/justgin/tree/master/wireframes), at project level. It contains screenshot images, for both the Mobile, Tablet, and Desktop viewport screen sizes, due to the use of Bootstrap 4, and the prioritisation on Mobile-first devices.
+
