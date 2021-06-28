@@ -88,3 +88,26 @@ The wireframes created with [Balsamiq]('https://balsamiq.com') at the beginning 
 
 <img src="static/img/db_structure.png">
 
+### Design
+
+A custom CSS file, placed within the static folder of justGin, was used in conjunction with [Bootstrap 4](https://getbootstrap.com/docs/4.5/getting-started/introduction/), which served as the main CSS library. [Materialize](https://materializecss.com/) was also used, however only for use of its vast library of icons. [Animate.css](https://animate.style/) was also utilised on the home page or, index.html within the home app, for the entry tagline and shop now button. It wasn't used anywhere else, as I felt it had a bigger impact by being used less. [Animate On Scroll](https://michalsnik.github.io/aos/) was used only on the products page, to show products only as the user scrolled down the page.
+
+### Colour Scheme
+
+As with all online platforms, a consistent colour palette is fundamental to a satisfying user experience. There are different outcomes when using the right colour scheme and with trying to keep a sense of elegance and style within the site, is why this particular colour palette was chosen. Three of the five colours presented were predominantly used.
+
+* 'Copper Crayola' was used throughout for headings, buttons and the ratings feature - which is how a product on the site is graded, by the admin user.
+
+* 'Dark Jungle Green' was used as an alternative to black. 
+
+* 'Peach' was used as an alternative to white. Although dependent on the responsiveness in screen size, #FAFAFA - an off-white - was also used as a more effective contrasting colour.
+
+<div>
+    <img src="static/img/palette.png" width="550px" height="100px" alt="Colour Palette">
+</div>
+
+The 'update', 'edit' or 'delete' links utilised standard conventions of green, red and blue. These colours were also used against the Toast feature, to demonstrate the success or failure of an item being added or removed from the shopping cart.
+
+<div>
+    <img src="static/img/palette2.png" width="550px" height="auto" alt="Colour Palette">
+</div>
