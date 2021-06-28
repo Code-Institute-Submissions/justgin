@@ -1,9 +1,33 @@
 {% load static %}
+<!-- Home Icon -->
 <li class="list-inline-item float-left">
     <a href="{% url 'home' %}">
         <img src="{% static 'img/favicon.ico'%}" class="jgLink d-block d-lg-none" width="30px" height="auto" alt="">
     </a>
 </li>
+<li class="list-inline-item">
+    <a class="d-block d-lg-none jgLink" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="text-center">
+            <div><i class="fas fa-search fa-lg jgTextCopp"></i></div>
+            <p class="my-0 jgTextCopp small">Search</p>
+        </div>
+    </a>
+    <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+        <form class="form" method="GET" action="{% url 'products' %}">
+            <div class="input-group w-100">
+                <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                <div class="input-group-append">
+                    <button class="form-control form-control btn btn-warning jgBtn" type="submit">
+                        <span class="icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</li>
+<!-- Account Icon -->
 <li class="list-inline-item dropdown">
     <a class="d-block d-lg-none jgLink" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
@@ -24,6 +48,7 @@
         {% endif %}
     </div>
 </li>
+<!-- Shopping Cart Icon -->
 <li class="list-inline-item">
     <a class="{% if grand_total %}jgTextCopp font-weight-bold{% else %}jgTextDark{% endif %} jgLink d-block d-lg-none jgLink" href="{% url 'view_cart' %}">
         <div class="text-center">
