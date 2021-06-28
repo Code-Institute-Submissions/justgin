@@ -19,19 +19,27 @@ It has been deployed to [Github Pages]() and [Heroku]().
 * [UX](#ux)
   * [Concept](#concept)
   * [User Stories](#user-stories)
+    * [Customer Stories](#customer-stories)
+    * [Administrative Stories](#administrative-stories)
   * [Wireframes](#wireframes)
-  * [File Structure](#file-structure)
+  * [Database Structure](#database-structure)
   * [Design](#design)
     * [Colour Scheme](#colour-scheme)
     * [Typography](#typography)
     * [Imagery](#imagery)
 * [Features](#features)
   * [Existing Features](#existing-features)
+    * [Home Page](#home-page)
+    * [Product Catalogue](#product-catalogue)
+    * [Product Details](#product-details)
+    * [User Account](#user-account)
+    * [Shopping Cart](#shopping-cart)
+    * [Payment](#payment)
+    * [Admin Features](#admin-features)
   * [Future Implementations](#future-implementations)
 * [Technologies Used](#technologies)
   * [Languages and Frameworks](#languages-and-frameworks)
   * [Libraries and Programs](#libraries-and-programs)
-  * [Code Validation](#code-validation)
 * [Testing](#testing)
 * [Deployment](#deployment)
     * [Local Deployment](#local-deployment)
@@ -51,27 +59,27 @@ But now that society is regaining a slice of freedom by the week, and restrictio
 
 ### User Stories
 
-#### As a Customer
+#### Customer Stories
 
 | **As a customer and/or mixologist I would like to** | **So I Can**                            |
 | -------------------------------------------------- | --------------------------------------------- |
 | Browse products.                                   | Search for new and already tried gins.        |
-| Filter products by origin, price, name             | Compare the choices between justGin and other resellers.                                                                                                 |
-| Search for Gin using the search bar                | Filter Gin by a descriptive keyword.|
+| Filter products by origin, price, name.             | Compare the choices between justGin and other resellers.                                                                                                 |
+| Search for Gin using the search bar.               | Filter Gin by a descriptive keyword.|
 | See details about a product.                       | Make a responsible purchasing decision.       |
 | Buy a product from the shop.                       | Enjoy and share it with others.               |
 | View my shopping cart before purchasing.           | See a cost breakdown before the purchase.     |
 | Update my shopping cart.                           | Make any final decisions before ordering.     |
 | Pay via a credit/debit card.                       | Complete a purchase.                          |
-| Receive an email confirmation about my order       | To be provided with proof of purchase for any potential issues.|
+| Receive an email confirmation about my order.      | To be provided with proof of purchase for any potential issues.|
 | Create an account.                                 | To speed up future orders and view past orders.|
 | Amend my account details.                          | Be informed about orders and offers by justGin.|
-| View my order history                              | be reminded of previous purchases.            |
+| View my order history                              | Be reminded of previous purchases.            |
 | See what is new to the store.                      | Try the newest gins to share with others.     |
 
 <br>
 
-#### User Stories for Shop Administrators
+#### Administrative Stories
 
 | **As an Administrator I would like to**     | **So I Can**                                     |
 | ------------------------------------------- | ------------------------------------------------ |
@@ -138,7 +146,7 @@ The lower Navigation bar, which toggles into a dropdown menu on mobile devices, 
 When navigating to the justGin store, there are various different options to aid the user in finding a product they are looking for. These are:
 
 * A form utilising a search box which is used by entering a keyword. This is accessible on all screen sizes.
-* A category tag within the product card, which lists a Gin by its origin. This is marked with the icon: <img src="static/img/tag.png">
+* A category tag within the product card, which lists a Gin by its origin. This is marked with the icon: " <img src="static/img/tag.png" width="15px"> "
 * A "Sort By" box located in a row, above the product catalogue.
 
 #### Product Details
@@ -225,3 +233,36 @@ In addition to this it would be in the best interests of justGin to implement a 
 
 The following document, [TEST.md](https://github.com/LHBank/justgin/blob/master/TEST.md) has been created to record the manual testing carried out throughout the project.
 
+## Deployment
+#### Local Deployment
+
+
+#### Heroku Deployment
+
+
+## Media
+<strong>Product images used throughout the project, specifically in the product app, were obtained from the following online supermarkets and resellers:
+</strong>
+
+* [Sainsburys](https://www.sainsburys.co.uk/)
+* [Asda](https://www.asda.com/)
+* [Master of Malt](https://www.masterofmalt.com/)
+* [Virgin Wines](https://www.virginwines.co.uk/)
+
+
+<strong>Hero Images for the main site background, 'About' page and 'Info' page, were obtained from the owners via [Pexels](https://www.pexels.com/):</strong>
+
+* [Hero Image - base.html](https://www.pexels.com/photo/food-cold-sand-alcohol-8084719/)
+* [Hero Image - about.html](https://www.pexels.com/photo/lemonade-on-brown-surface-616836/)
+* [Hero Image - info.html](https://www.pexels.com/photo/food-cold-red-blue-4702421/)
+
+
+## Acknowledgements
+*  As mentioned in my penultimate project, my thanks to the Student Care team at Code Institute again for their support and understanding during a particularly difficult time, whilst I, like many other students, were also taking on the challenge of learning new technologies taught through their Full Stack Web Development Course.
+
+* My thanks to Felipe Alarcon, my mentor through Code Institute, who has been encouraging and available to talk to whenever I've 
+found myself unable to comprehend certain elements of advanced technologies. His helpful nature, and commitment to the students
+he is responsible for assisting where he can, - from my own experience - has been consistent from the commencement of the course, and I am grateful for this.
+
+* This project-concept, "justGin", has been created by W. Marjoribanks, and shares similar syntax to that of a Walkthrough Project 
+currently in place by Code Institute, Dublin.
