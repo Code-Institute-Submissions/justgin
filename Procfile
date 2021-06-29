@@ -1,1 +1,1 @@
-web: gunicorn justgin.wsgi.application
+web: gunicorn justgin.wsgi:application
