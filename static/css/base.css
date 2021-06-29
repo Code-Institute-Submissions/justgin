@@ -281,5 +281,6 @@ input[name='q']::placeholder {
 @media (max-width: 480px) {
     body {
         background-image: url('/static/img/basehero.jpg') no-repeat center center fixed;
+        max-height: 100vh;
     }
 }
