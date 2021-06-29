@@ -91,6 +91,19 @@ a {
     margin: 0;
 }
 
+#jgProdCheOverl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FAFAFA;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100%;
+    z-index: -99999;
+    padding: 0;
+    margin: 0;
+}
+
 /* ------ Alignment  */
 
 .jgMidHeight {
@@ -273,14 +286,4 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content a {
     color: #F7DBA7;
-}
-
-
-/* ------ MQ */
-
-@media (max-width: 480px) {
-    body {
-        background-image: url('/static/img/basehero.jpg') no-repeat center center fixed;
-        max-height: 100vh;
-    }
 }
