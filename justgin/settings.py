@@ -120,7 +120,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
 
@@ -201,7 +201,7 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 # EMAIL SETUP
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'incoherent_info@example.com'
+    DEFAULT_FROM_EMAIL = 'incoherent.info.jj@example.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True

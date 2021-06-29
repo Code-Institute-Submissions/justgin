@@ -7,7 +7,7 @@ html {
 body {
     background: url('/static/img/basehero.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    min-height: calc(100vh - 164px);
 }
 
 /* ------ Font Styles */
@@ -273,4 +273,13 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content a {
     color: #F7DBA7;
+}
+
+
+/* ------ MQ */
+
+@media (max-width: 480px) {
+    body {
+        background-image: url('/static/img/basehero.jpg') no-repeat center center fixed;
+    }
 }
