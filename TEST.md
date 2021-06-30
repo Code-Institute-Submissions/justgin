@@ -16,7 +16,13 @@ During the development of 'justGin', I made the decision to manually test the co
     * [Shopping Cart and Payment](#shopping-cart-and-payment)
     * [Admin Features](#admin-features)
     * [Error Handling](#error-handling)
+* [Validation](#validation)
+    * [HTML](#html)
+    * [CSS](#css)
+    * [JavaScript](#javascript)
+    * [Python](#python)
 * [Responsive Design](#responsive-design)
+* [Speed Testing](#speed-testing)
 
 
 ---
@@ -82,6 +88,12 @@ Only certain fields within the form collect user day regarding a shipping addres
     <img src="static/testgif/removing.gif" type="gif" alt="Remove gif">
 </div>
 
+Once a purchase has been processed by Stripe and the Webhook has been successfully handled, the user will recieve a confirmation email direct to the inputted email address.
+
+<div>
+    <img src="static/testgif/email_test.gif" type="gif" alt="Remove gif">
+</div>
+
 ### Admin Features
 As previously mentioned, admin users had a wider range of abilities to better serve the customers. This meant being able to add, edit and delete items within the store. Naturally, this could be done through the ```/admin``` site when typed in after the site url, however it was important that there was a more user-friendly experience for site-owners/admin account holders.
 <div>
@@ -102,6 +114,36 @@ To prevent non-authorised users from having the ability to carry out product add
 Instead of creating a designated error page, for attempting to access a site page whilst unauthorised, the Toast function alerts the user, that they are prohibited from this feature.
 
 ---
+## Validation
+
+### HTML
+
+### CSS
+
+Using [W3C](https://jigsaw.w3.org/css-validator/) CSS validation, the following report was provided:
+
+<div>
+    <img src="static/img/w3_css.png" type="png" alt=" W3C CSS">
+</div>
+
+### JavaScript
+
+JSHint was used to validate the JavaScript used within the application, and in two files, the only resulting warning, referenced template literal syntax, as seen below.
+
+<div>
+    <img src="static/img/jshint.png" type="png" alt=" JSHINT">
+</div>
+
+
+### Python
+
+To ensure that all Python files were compliant with Pep8 standards, I manually tested all files by installing autopep8. This works by inputting the file you wish to be checked preceeded by autopep8 --aggressive.
+
+    Example:
+
+        autopep8 --aggressive checkout/views.py
+
+On occasion, there were instances where Python syntax couldn't be formatted, due to repercussions that would ensue. These often occurred because of ```KEYS``` which, if altered, would affect the project's functionality.
 
 ## Responsive Design
 
@@ -118,3 +160,11 @@ Using various browser Developer Tools; Chrome, Safari and Opera and testing diff
 
  
 No errors presented themselves at time of testing using the above browsers.
+
+## Speed Testing
+
+I used Lighthouse within Chrome Developer Tools, to check the speed of the site. The site's results were in all fairness, above average and this was due to certain UX choices, such as a navigation bar with no background colour and the image sizes, despite being compressed, were large enough to impact the overall performance.
+
+<div>
+    <img src="static/img/lighthouse.png" type="png" alt="Lighthouse Results">
+</div>

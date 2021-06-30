@@ -230,6 +230,11 @@ I think another nice feature to include, would be to expand the number of paymen
 * [Balsamiq](https://balsamiq.com) - Wireframes
 * [LucidChart](https://lucid.co/) - File structure diagram creation.
 * [w3Schools.com](https://www.w3schools.com) - Reference purposes.
+* [W3C - HTML](https://validator.w3.org/) - HTML Validation
+* [W3C - CSS](https://jigsaw.w3.org/css-validator/) - CSS Validation
+* [jshint](https://jshint.com/) - JavaScript Validation
+* [PEP8](http://pep8online.com/) - Python Formatt Validation
+* [autopep8](https://pypi.org/project/autopep8/) - Package installed within project to checck code throughout.
 
 ## Testing
 
