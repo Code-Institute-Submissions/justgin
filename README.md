@@ -237,9 +237,103 @@ The following document, [TEST.md](https://github.com/LHBank/justgin/blob/master/
 
 ## Deployment
 #### Local Deployment
+The method in which justGin can be deployed locally, is as follows:
 
+From the project repository in Github, select the button labeled "code" and download the zip file of the repository.
+
+or
+
+Within the URL, type in the following:
+*  ```https://gitpod.io/#github.com/LHBank/justgin```
+
+Create two files at project level, called requirements.txt using ```pip3 freeze --local > requirements.txt``` and another file called ```env.py``` by adding file manually.
+
+Either at the beginning or throughout the project, whenever a requirement is installed, this file will need to be updated using the command,  ```pip3 freeze > requirements.txt```.
+
+Due to private information being shared with the site, security is of utmost importance. To prevent unauthorised users from accessing certain information, an ```env.py``` file can be implemented at project level, storing confidential KEYS. 
+
+This ```env.py``` file should also be mentioned as a condition within the ```.gitignore``` file, also at project level, to prevent being pushed to version control. This will lead to a major security breach if the ```env.py``` file hasn’t been implemented before pushing to Github, so only push changes to Github once the above steps have been completed.
+
+```env.py``` should include the following, to incorporate the use of email verification and AWS storage solutions.
+
+    import os
+
+    os.environ["SECRET_KEY"] = "YOUR_DJANGO_SECRET_KEY"
+
+    os.environ["STRIPE_PUBLIC_KEY"] = “YOUR_STRIPE_PUBLIC_KEY"
+
+    os.environ["STRIPE_SECRET_KEY"] = “YOUR_STRIPE_SECRET_KEY"
+
+    os.environ["STRIPE_WH_SECRET"] = “YOUR_STRIPE_WEBHOOK_SECRET”
+
+    os.environ[“DATABASE_URL” = “YOUR_DATABASE_URL”
+
+    os.environ[“AWS_ACCESS_KEY_ID"] = “YOUR_AWS_ACCESS_KEY_ID"
+
+    os.environ[“AWS_SECRET_ACCESS_KEY”] = “YOUR_AWS_SECRET_ACCESS_KEY”
+
+    os.environ['EMAIL_HOST_USER'] = ‘YOUR_EMAIL_USER'
+
+    os.environ['EMAIL_HOST_PASSWORD'] = ‘YOUR_EMAIL_PASSWORD'
+
+    os.environ['DEFAULT_ORDER_EMAIL'] = 'DEFAULT_EMAIL'
+
+In the terminal run the following commands to migrate the models:
+
+    python3 manage.py makemigrations
+    python3 manage.py migrate
+
+Create a Superuser/admin to manage the backend elements of the site using:
+
+    python3 manage.py createsuperuser
+
+It is now possible for justGin to be run locally. This is made available by running the command ```python3 manage.py runserver``` within the terminal.
+
+As a Superuser, you have the ability to upload products to the site, in one of two ways, manually, inputting each product, item by item, or through JSON fixture files, which isn't <em>as</em> time intensive.
+
+The products loaded to the site, need to know where they are to be kept. As such:
+
+    python3 manage.py loaddata categories
+    python3 manage.py loaddata products
 
 #### Heroku Deployment
+Within the Heroku dashboard, a new application will need to be prepared for the project to be uploaded to. 
+
+Designate a database add-on to be use, such as ```Heroku Postgres```. The 'Hobby' level of addon can be used, for this project, unless of course creating a real business, in which case costs will incur.
+
+Navigate to the "Deploy" tab on the Heroku dashboard, and select a deployment method to connect to the Gitpod repository already created. The simplest method is to choose Github, and connect your account. Following that, enable "Automatic Deployment".
+
+Now select the "Settings" tab within the Heroku dashboard, and scroll down to the button named ```Reveal Config Vars```. The ```VARIABLE``` and ```VALUE``` need to match the details stored in the ```env.py``` file created before.
+
+The ```VARIABLES``` and ```VALUES``` should include:
+
+    AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY
+    DATABASE_URL
+    EMAIL_HOST_USER
+    EMAIL_HOST_PASSWORD
+    SECRET_KEY
+    STRIPE_PUBLIC_KEY
+    STRIPE_SECRET_KEY
+    STRIPE_WH_SECRET
+    USE_AWS 
+
+As well as their own corresponding ```KEY VALUES```. ```USE_AWS``` should be set to ```True``` to enable the use of Amazon Web Services.
+
+Once the app has been deployed from Heroku, and a successful build has been established, the link provided, ending in "```.herokuapp.com```" is ready for you to visit.
+
+#### AWS - Amazon Web Services
+This cloud based service provided by amazon, is where all of the projects media and static folders will be stored when not using a development environment through Gitpod. 
+
+If usage exceeds the free standard of 2000 requests, fees will apply.
+
+* The AWS cloud service is established by using S3.
+* Create an S3 bucket, and keep the name as similar to the Heroku app name you designated beforehand.
+* Static web hosting should be enable within the ```Properties``` tab.
+* Create a policy and enable it to be publically accessed using the ARN number provided.
+* A group and user, must be created to manage the bucket and attached policy. 
+* This is established using IAM, also within AWS.
+* Ensure the ```KEY``` values are stored correctly within Heroku, for Static and Media files to display.
 
 
 ## Media
