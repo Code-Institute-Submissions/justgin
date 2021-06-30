@@ -10,7 +10,7 @@ We sell gin.
 
 Our shop is going to get bigger, and it's going to get harder to choose. justGin is a project, developed as part of my (William Marjoribanks') fourth and final Milestone within the curriculum at Code Institute, Dublin.
 
-It has been deployed to [Github Pages]() and [Heroku]().
+It has been deployed to [Github Pages]() and the live site, using [Heroku](https://justgin.herokuapp.com/).
 
 ---
 
@@ -202,6 +202,8 @@ Currently, there has been a page allocated to a 'Blog' page in the site. Althoug
 
 In addition to this it would be in the best interests of justGin to implement a newsletter which users could sign up to and be notified of any updates, from the above features.
 
+I think another nice feature to include, would be to expand the number of payment methods with more and more people nowadays using Apple Pay, Google Pay etc.
+
 ## Technologies
 ### Languages and Frameworks
 * HTML
@@ -241,7 +243,7 @@ The following document, [TEST.md](https://github.com/LHBank/justgin/blob/master/
 
 
 ## Media
-<strong>Product images used throughout the project, specifically in the product app, were obtained from the following online supermarkets and resellers:
+<strong>Product images used throughout the project, specifically in the product app, were obtained from the following online supermarkets and resellers only:
 </strong>
 
 * [Sainsburys](https://www.sainsburys.co.uk/)
@@ -249,6 +251,7 @@ The following document, [TEST.md](https://github.com/LHBank/justgin/blob/master/
 * [Master of Malt](https://www.masterofmalt.com/)
 * [Virgin Wines](https://www.virginwines.co.uk/)
 
+<strong>The ```gin_desc``` model value, uses various excerpts of text content obtained from the above sites only.</strong>
 
 <strong>Hero Images for the main site background, 'About' page and 'Info' page, were obtained from the owners via [Pexels](https://www.pexels.com/):</strong>
 
@@ -262,7 +265,7 @@ The following document, [TEST.md](https://github.com/LHBank/justgin/blob/master/
 
 * My thanks to Felipe Alarcon, my mentor through Code Institute, who has been encouraging and available to talk to whenever I've 
 found myself unable to comprehend certain elements of advanced technologies. His helpful nature, and commitment to the students
-he is responsible for assisting where he can, - from my own experience - has been consistent from the commencement of the course, and I am grateful for this.
+he is responsible for assisting where he can - from my own experience - has been consistent from the commencement of the course, and I am grateful for this.
 
 * This project-concept, "justGin", has been created by W. Marjoribanks, and shares similar syntax to that of a Walkthrough Project 
 currently in place by Code Institute, Dublin.
