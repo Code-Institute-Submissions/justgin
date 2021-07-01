@@ -154,12 +154,25 @@ Using various browser Developer Tools; Chrome, Safari and Opera and testing diff
   * Google Pixel
   * Huawei Mate 20X
   * Samsung Galaxy Z
-  * iPhone Models 5, 6, and 11
+  * iPhone Models 5, 10, 11 & 12
   * iPad Pro
   * MacBook Pro
 
- 
 No errors presented themselves at time of testing using the above browsers.
+
+Below are images of justGin being tested through on various mobile devices.
+
+<div>
+    <img src="static/img/response1.png" type="png" alt="Responsiveness 1">
+</div>
+
+<div>
+    <img src="static/img/response2.png" type="png" alt="Responsiveness 2">
+</div>
+
+<div>
+    <img src="static/testgif/response3.gif" type="gif" alt="Responsiveness 3 gif">
+</div>
 
 ## Speed Testing
 
