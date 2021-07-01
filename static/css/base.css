@@ -104,6 +104,11 @@ a {
     margin: 0;
 }
 
+#jgFavicon {
+    width: 30px;
+    height: auto;
+}
+
 /* ------ Alignment  */
 
 .jgMidHeight {
@@ -114,6 +119,7 @@ a {
     margin-top: 15rem;
     margin-right: 2rem;
 }
+
 
 /* ------ Text Colours */
 

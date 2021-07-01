@@ -1,12 +1,12 @@
 {% load static %}
-<ul>
+<ul class="list-group list-group-horizontal">
     <!-- Home Icon -->
-    <li class="list-inline-item float-left">
+    <li class="ist-group-item float-left">
         <a href="{% url 'home' %}">
-            <img src="{% static 'img/favicon.ico'%}" class="jgLink d-block d-lg-none" width="30px" height="auto" alt="">
+            <img src="{% static 'img/favicon.ico'%}" class="jgLink d-block d-lg-none" alt="Site Brand" id="jgFavicon">
         </a>
     </li>
-    <li class="list-inline-item">
+    <li class="list-group-item">
         <a class="d-block d-lg-none jgLink" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
                 <div><i class="fas fa-search fa-lg jgTextCopp"></i></div>
@@ -29,7 +29,7 @@
         </div>
     </li>
     <!-- Account Icon -->
-    <li class="list-inline-item dropdown">
+    <li class="list-group-item dropdown">
         <a class="d-block d-lg-none jgLink" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
                 <div><i class="fas fa-user fa-lg jgTextCopp"></i></div>
@@ -54,7 +54,7 @@
         </div>
     </li>
     <!-- Shopping Cart Icon -->
-    <li class="list-inline-item">
+    <li class="list-group-item">
         <a class="{% if grand_total %}jgTextCopp font-weight-bold{% else %}jgTextDark{% endif %} jgLink d-block d-lg-none jgLink" href="{% url 'view_cart' %}">
             <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg jgTextCopp"></i></div>
