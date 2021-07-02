@@ -1,11 +1,6 @@
 {% load static %}
-<!-- Home Icon -->
-<div class="list-inline pt-3">
-    <div class="list-inline-item float-left">
-        <a href="{% url 'home' %}">
-            <img src="{% static 'img/favicon.ico'%}" class="jgLink d-block d-lg-none" id="jgFavicon" alt="">
-        </a>
-    </div>
+<!-- Search Icon -->
+<div class="list-inline mt-3">
     <div class="list-inline-item">
         <a class="d-block d-lg-none jgLink" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
@@ -13,10 +8,10 @@
                 <p class="my-0 jgTextCopp small">Search</p>
             </div>
         </a>
-        <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+        <div class="dropdown-menu border-0 w-100 rounded-0" aria-labelledby="mobile-search">
             <form class="form" method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
-                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search justGin">
                     <div class="input-group-append">
                         <button class="form-control form-control btn btn-warning jgBtn" type="submit">
                             <span class="icon">
