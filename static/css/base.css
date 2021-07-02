@@ -48,7 +48,9 @@ a {
 }
 
 .jgListLink:hover {
+    background-color: rgba(247, 219, 167, 0.8);
     color:#C57B57;
+    border-radius: 10px;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -83,19 +85,6 @@ a {
     top: 0;
     left: 0;
     background: url('/static/img/contacthero.jpg') no-repeat center center fixed;
-    background-size: cover;
-    min-height: 100vh;
-    min-width: 100%;
-    z-index: -99999;
-    padding: 0;
-    margin: 0;
-}
-
-#jgProdCheOverl {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #FAFAFA;
     background-size: cover;
     min-height: 100vh;
     min-width: 100%;
@@ -223,17 +212,17 @@ input[name='q']::placeholder {
     position: fixed;
     top: 72px;
     right: 15px;
-    z-index: 999999999999999
+    z-index: 999999999
 }
 
 .jgToast {
     overflow: visible;
-    z-index: 999999999999999
+    z-index: 999999999
 }
 
 .jgTCap {
     height: 2px;
-    z-index: 999999999999999
+    z-index: 999999999
 }
 
 .jgCartNotWr {
