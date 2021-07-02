@@ -127,7 +127,7 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script>
+    <script type="text/javascript">
         $('#sort-selector').change(function() {
             var selector = $(this);
             var currentUrl = new URL(window.location);

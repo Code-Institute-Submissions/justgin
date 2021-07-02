@@ -67,11 +67,11 @@ a {
     width: auto;
 }
 
-#jgAboutImg {
+#jgBlogImg {
     position: absolute;
     top: 0;
     left: 0;
-    background: url('/static/img/abouthero.jpg') no-repeat center center fixed;
+    background: url('/static/img/bloghero.jpg') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     min-width: 100%;
