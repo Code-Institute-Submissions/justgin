@@ -118,6 +118,12 @@ Instead of creating a designated error page, for attempting to access a site pag
 
 ### HTML
 
+To ensure that all HTML code was free of errors [W3C](https://validator.w3.org/) was used:
+
+<div>
+    <img src="static/img/html_val.png" type="png" alt=" W3C CSS">
+</div>
+
 ### CSS
 
 Using [W3C](https://jigsaw.w3.org/css-validator/) CSS validation, the following report was provided:
