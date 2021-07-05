@@ -45,6 +45,7 @@ It has been deployed to Heroku, and can be viewed using [this link](https://just
     * [Local Deployment](#local-deployment)
     * [Deployment to Heroku](#heroku-deployment)
 * [Media](#media)
+* [Mentions](#mentions)
 * [Acknowledgements](#acknowledgements)
 
 ---
@@ -359,6 +360,12 @@ If usage exceeds the free standard of 2000 requests, fees will apply.
 * [Hero Image - base.html](https://www.pexels.com/photo/lemonade-on-brown-surface-616836/)
 * [Hero Image - info.html](https://www.pexels.com/photo/food-cold-red-blue-4702421/)
 
+
+## Mentions
+
+During the later/completion stages of the project, a widespread incident occurred within Gitpod, where repositories were moved, and account owners were advised to start a new repository and clone all files. 
+
+Despite choosing to wait for a more positive outcome, and being reassured that my files had been relocated to their original place, importing Django was affected. This meant that final, smaller details couldn't be updated, when taking into consideration the files that were connected with AWS.
 
 ## Acknowledgements
 *  As mentioned in my penultimate project, my thanks to the Student Care team at Code Institute again for their support and understanding during a particularly difficult time, whilst I, like many other students, were also taking on the challenge of learning new technologies taught through their Full Stack Web Development Course.
