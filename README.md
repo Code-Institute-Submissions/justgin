@@ -8,9 +8,9 @@ You guessed it.
 
 We sell gin.
 
-Our shop is going to get bigger, and it's going to get harder to choose. justGin is a project, developed as part of my (William Marjoribanks') fourth and final Milestone within the curriculum at Code Institute, Dublin.
+Our shop is going to get bigger, and it's going to get harder to choose. justGin is a project, developed as part of my (William Marjoribanks') fourth and final Milestone within the curriculum at Code Institute, Dublin. The task was to create an e-commerce site, which provides a service or sells a product, using Stripe payments.
 
-It has been deployed to [Github Pages]() and the live site, using [Heroku](https://justgin.herokuapp.com/).
+It has been deployed to Heroku, and can be viewed using [this link](https://justgin.herokuapp.com/).
 
 ---
 
@@ -355,8 +355,8 @@ If usage exceeds the free standard of 2000 requests, fees will apply.
 
 <strong>Hero Images for the main site background, 'About' page and 'Info' page, were obtained from the owners via [Pexels](https://www.pexels.com/):</strong>
 
-* [Hero Image - base.html](https://www.pexels.com/photo/food-cold-sand-alcohol-8084719/)
-* [Hero Image - about.html](https://www.pexels.com/photo/lemonade-on-brown-surface-616836/)
+* [Hero Image - blog.html](https://www.pexels.com/photo/food-cold-sand-alcohol-8084719/)
+* [Hero Image - base.html](https://www.pexels.com/photo/lemonade-on-brown-surface-616836/)
 * [Hero Image - info.html](https://www.pexels.com/photo/food-cold-red-blue-4702421/)
 
 
